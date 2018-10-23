@@ -1,0 +1,23 @@
+// @font-face {
+// 	font-family: CorporateACondensed;
+// 	font-size: normal;
+// 	font-weight: normal;
+// 	font-style: normal;
+// 	src: url("../fonts/corporate/Corporate-Acon-reg-webfont.eot"),
+// 	url("../fonts/corporate/Corporate-Acon-reg-webfont.svg"),
+// 	url("../fonts/corporate/Corporate-Acon-reg-webfont.ttf"),
+// 	url("../fonts/corporate/Corporate-Acon-reg-webfont.woff");
+// }
+
+body {
+	font-family: "Open Sans", verdana, sans-serif;
+	color: #000;
+}
+
+strong, b {
+	font-weight: 700;
+}
+
+em, i {
+	font-style: italic;
+}

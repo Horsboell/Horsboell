@@ -1,0 +1,22 @@
+.flexbox {
+	display: flex;
+	flex-wrap: wrap;
+
+	&.fb-vmiddle {
+		align-items: center;
+	}
+	&.fb-stretch {
+		align-items: stretch;
+	}
+
+	// Children
+	> * {
+		flex: 1 0 auto;
+	}
+
+	@include mq-to($phone) {
+		> * {
+			width: 100%;
+		}
+	}
+}
