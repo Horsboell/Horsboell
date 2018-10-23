@@ -9,9 +9,14 @@
 // 	url("../fonts/corporate/Corporate-Acon-reg-webfont.woff");
 // }
 
+html {
+	font-size: 62.5%;
+}
+
 body {
-	font-family: "Open Sans", verdana, sans-serif;
+	font-family: objektiv-mk1, sans-serif;
 	color: #000;
+	font-size: 1.6rem;
 }
 
 strong, b {
@@ -20,4 +25,28 @@ strong, b {
 
 em, i {
 	font-style: italic;
+}
+
+h1 {
+	font-size: 3rem;
+	font-weight: 800;
+	margin-bottom: .75em;
+	animation: fadein 2s;
+}
+
+a.ext {
+	display: inline-block;
+	padding: .5em 1em;
+	background-color: #000;
+	color: #fff;
+	border-radius: 1em;
+	text-decoration: none;
+	font-weight: 700;
+	font-size: 1.6rem;
+	animation: fadein 2s;
+
+	&.dribbble {
+		background: #ea4c89;
+		background: linear-gradient(45deg, #E47B49 0%, #ea4c89 100%);
+	}
 }
