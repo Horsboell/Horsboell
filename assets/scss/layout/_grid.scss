@@ -5,13 +5,17 @@
 	&.fb-vmiddle {
 		align-items: center;
 	}
+	&.fb-end {
+		align-items: flex-end;
+	}
 	&.fb-stretch {
 		align-items: stretch;
 	}
-
-	// Children
-	> * {
-		flex: 1 0 auto;
+	&.fb-justify {
+		justify-content: center;
+	}
+	&.fb-equal > * {
+		flex: 1;
 	}
 
 	@include mq-to($phone) {
