@@ -20,7 +20,7 @@
 
 	@include mq-to($phone) {
 		> * {
-			width: 100%;
+			// width: 100%;
 		}
 	}
 }
