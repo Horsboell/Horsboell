@@ -171,5 +171,8 @@ img {
   font-weight: bold;
   text-decoration: none; }
 
+body {
+  text-align: center; }
+
 section.flexbox {
   height: 100%; }
