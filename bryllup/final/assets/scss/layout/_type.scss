@@ -1,0 +1,26 @@
+html { font-size: 62.5%; } 
+body {
+	font-size: 14px;
+	font-size: 1.6rem; /* =14px */
+	line-height: 1.8;
+	font-family: "hero-new", verdana, sans-serif;
+	color: #000;
+}
+
+strong, b {font-weight: 700;}
+em, i {font-style: italic;}
+
+h1, h2, p {
+	&:not(:first-child) {
+		margin: 2em 0 1em;
+	}
+}
+
+h1 {
+	font-size: 3rem;
+	line-height: normal;
+}
+h2 {
+	font-size: 2rem;
+	line-height: normal;
+}

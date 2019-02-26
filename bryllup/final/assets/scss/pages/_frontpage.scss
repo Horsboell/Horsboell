@@ -1,0 +1,29 @@
+#leftWrapper {
+
+	@include mq-from($desktop) {
+		position: fixed;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		width: $wv9;
+
+		#navWrapper {
+			width: $wv4;
+
+			.container {
+				padding-right: 0;
+			}
+		}
+	}
+}
+
+
+#rightWrapper {
+	@include mq-from($desktop) {
+		margin-left: $wv9;
+
+		.section {
+			padding: 0 $wv1/2;
+		}
+	}
+}

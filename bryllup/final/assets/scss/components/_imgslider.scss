@@ -1,0 +1,38 @@
+#imgWrapper {
+	padding-left: $wv1/2;
+	width: $wv5;
+	height: 100%;
+
+	@include mq-to($tablet) {
+		display: none;
+	}
+
+	.custom-container {
+		padding-top: $pd-default * 1.5;
+		padding-bottom: $pd-default * 1.5;
+	}
+
+	.imgSlider {
+		position: relative;
+		overflow: hidden;
+		width: 100%;
+		height: calc(100vh - #{$pd-default * 3});
+
+		// &.ghost.first {
+		// 	opacity: .5;
+		// 	position: absolute;
+		// 	transform: translateY(-100%);
+		// }
+	}
+	.imgSlider_container {
+		width: 100%;
+		height: 100%;
+		transition: transform 2s;
+	}
+	.imageChild {
+		width: 100%;
+		height: 100%;
+		background-size: cover;
+		background-position: center;
+	}
+}

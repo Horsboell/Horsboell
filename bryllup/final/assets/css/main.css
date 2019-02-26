@@ -1,0 +1,247 @@
+/**
+* Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+* http://cssreset.com
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.mq-indicator {
+  display: none; }
+  .mq-indicator > div {
+    display: none; }
+  @media only screen and (max-width: 480px) {
+    .mq-indicator #mobile-indicator {
+      display: block; } }
+  @media only screen and (min-width: 480px) and (max-width: 768px) {
+    .mq-indicator #tablet-indicator {
+      display: block; } }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .mq-indicator #tablet-l-indicator {
+      display: block; } }
+  @media only screen and (min-width: 1100px) {
+    .mq-indicator #desktop-indicator {
+      display: block; } }
+
+@keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-size: 14px;
+  font-size: 1.6rem;
+  /* =14px */
+  line-height: 1.8;
+  font-family: "hero-new", verdana, sans-serif;
+  color: #000; }
+
+strong, b {
+  font-weight: 700; }
+
+em, i {
+  font-style: italic; }
+
+h1:not(:first-child), h2:not(:first-child), p:not(:first-child) {
+  margin: 2em 0 1em; }
+
+h1 {
+  font-size: 3rem;
+  line-height: normal; }
+
+h2 {
+  font-size: 2rem;
+  line-height: normal; }
+
+html, body {
+  height: 100%; }
+
+html {
+  -webkit-text-size-adjust: 100%; }
+
+a {
+  cursor: pointer; }
+
+img {
+  max-width: 100%; }
+
+.container {
+  padding: 6.25vw; }
+
+#mainNav {
+  text-transform: uppercase;
+  margin-bottom: 20vh;
+  letter-spacing: .1em; }
+  #mainNav a {
+    display: inline-block;
+    padding: .25em 0;
+    text-decoration: none;
+    font-weight: 700;
+    color: #000; }
+
+.fb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .fb > * {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto; }
+  .fb.fb-vmiddle {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .fb.fb-end {
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end; }
+  .fb.fb-stretch {
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch; }
+  .fb.fb-jcenter {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .fb.fb-spacebetween {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .fb.fb-flex > * {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+    max-width: 100%; }
+
+.button {
+  display: inline-block;
+  margin-top: 1.5em;
+  padding: 1em 2em;
+  background-color: #000;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none; }
+
+#imgWrapper {
+  padding-left: 3.125vw;
+  width: 31.25vw;
+  height: 100%; }
+  @media only screen and (max-width: 768px) {
+    #imgWrapper {
+      display: none; } }
+  #imgWrapper .custom-container {
+    padding-top: 75px;
+    padding-bottom: 75px; }
+  #imgWrapper .imgSlider {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: calc(100vh - 150px); }
+  #imgWrapper .imgSlider_container {
+    width: 100%;
+    height: 100%;
+    -webkit-transition: -webkit-transform 2s;
+    transition: -webkit-transform 2s;
+    -o-transition: transform 2s;
+    transition: transform 2s;
+    transition: transform 2s, -webkit-transform 2s; }
+  #imgWrapper .imageChild {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center; }
+
+@media only screen and (min-width: 1100px) {
+  #leftWrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 56.25vw; }
+    #leftWrapper #navWrapper {
+      width: 25vw; }
+      #leftWrapper #navWrapper .container {
+        padding-right: 0; } }
+
+@media only screen and (min-width: 1100px) {
+  #rightWrapper {
+    margin-left: 56.25vw; }
+    #rightWrapper .section {
+      padding: 0 3.125vw; } }

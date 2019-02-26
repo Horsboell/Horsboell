@@ -1,0 +1,27 @@
+.fb {
+	display: flex;
+	flex-wrap: wrap;
+
+	// Children
+	> * {
+		flex: 0 0 auto;
+	}
+
+	&.fb-vmiddle {align-items: center;}
+	&.fb-end {align-items: flex-end;}
+	&.fb-stretch {align-items: stretch;}
+	&.fb-jcenter {justify-content: center;}
+	&.fb-spacebetween {justify-content: space-between;}
+	&.fb-flex {
+		> * {
+			flex: 1 0 auto;
+			max-width: 100%;
+		}
+	}
+
+	@include mq-to($phone) {
+		> * {
+			// width: 100%;
+		}
+	}
+}
