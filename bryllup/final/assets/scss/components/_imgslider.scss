@@ -7,6 +7,12 @@
 		display: none;
 	}
 
+	@include mq-to-from($tablet, $tablet-l) {
+		position: fixed;
+		right: 0;
+		width: 50%;
+	}
+
 	.custom-container {
 		padding-top: $pd-default * 1.5;
 		padding-bottom: $pd-default * 1.5;

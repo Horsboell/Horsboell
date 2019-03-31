@@ -1,26 +1,78 @@
-html { font-size: 62.5%; } 
+html { 
+	font-size: 62.5%;
+} 
+
 body {
-	font-size: 14px;
-	font-size: 1.6rem; /* =14px */
+	font-size: 15px;
+	font-size: 1.5rem; /* =15px */
 	line-height: 1.8;
 	font-family: "hero-new", verdana, sans-serif;
 	color: #000;
 }
 
-strong, b {font-weight: 700;}
-em, i {font-style: italic;}
+strong, b {
+	font-weight: 700;
+}
 
-h1, h2, p {
+em, i {
+	font-style: italic;
+}
+
+h1, h2, h3, .h1, .h2, .h3 {
+	margin-bottom: 1em;
+
 	&:not(:first-child) {
-		margin: 2em 0 1em;
+		margin-top: 2em;
 	}
 }
 
-h1 {
-	font-size: 3rem;
+h1, .h1 {
+	font-weight: 200;
+	font-size: 4rem;
 	line-height: normal;
+	text-transform: uppercase;
 }
-h2 {
-	font-size: 2rem;
+
+h2, .h2 {
+	margin-top: 4em !important;
+	margin-bottom: 1.5em !important;
+	font-weight: 700;
+	font-size: 1.6rem;
 	line-height: normal;
+	text-transform: uppercase;
+}
+
+h3, .h3 {
+	display: inline-block;
+	position: relative;
+	text-transform: uppercase;
+	font-size: 1.6rem;
+
+	h2 + &,
+	.h2 + & {
+		margin-top: 0em !important;
+	}
+
+	&::after {
+		content: "";
+		position: absolute;
+		bottom: -.5em;
+		left: 0;
+		width: 100%;
+		border-bottom: 3px double $theme1;
+	}
+}
+
+p {
+	&:not(:first-child) {
+		margin: 1em 0;
+	}
+}
+
+.txt-small {
+	font-size: .9em;
+}
+.txt-large {
+	font-size: 1.3em;
+	line-height: 1.6;
 }

@@ -12,18 +12,53 @@
 
 			.container {
 				padding-right: 0;
+				padding-top: 75px;
 			}
 		}
 	}
+
+	#sitelogo {
+		max-height: 35vh;
+		margin-bottom: 5vh;
+	}
 }
 
-
 #rightWrapper {
+
+	@include mq-to-from($tablet, $tablet-l) {
+		width: 50%;
+	}
+
+
 	@include mq-from($desktop) {
 		margin-left: $wv9;
 
-		.section {
-			padding: 0 $wv1/2;
+		// .section {
+		// 	padding: 0 $wv1/2;
+		// }
+	}
+
+	.info {
+		@extend .txt-small;
+
+		position: relative;
+		background-color: $theme2;
+		padding: 1em;
+		padding-left: 100px;
+
+		&::after {
+			content: "info";
+			position: absolute;
+			left: 0;
+			top: 50%;
+			width: 100px;
+			text-align: center;
+			transform: translateY(-50%);
+
+			text-transform: uppercase;
+			// font-weight: 700;
+			color: darken($theme2, 30%);
 		}
 	}
+
 }
