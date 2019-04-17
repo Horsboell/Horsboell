@@ -1,0 +1,47 @@
+.fb {
+	display: flex;
+	flex-wrap: wrap;
+
+	// Children
+	> * {
+		flex: 0 0 auto;
+	}
+
+	&.fb-vmiddle {align-items: center;}
+	&.fb-end {align-items: flex-end;}
+	&.fb-stretch {align-items: stretch;}
+	&.fb-jcenter {justify-content: center;}
+	&.fb-spacebetween {justify-content: space-between;}
+	&.fb-fdclm {flex-direction: column;}
+	&.fb-flex {
+		> * {
+			flex: 1 0 auto;
+			// max-width: 100%;
+		}
+	}
+	& > * {
+		max-width: 100%;
+	}
+
+	.clm1-1 {
+		@include mq-from($tablet-l) {
+			width: $wp16;
+		}
+	}
+	.clm1-2 {
+		@include mq-from($tablet-l) {
+			width: $wp8;
+		}
+	}
+	.clm-single {
+		@include mq-from($tablet-l) {
+			width: $wp10;
+		}
+	}
+
+	@include mq-to($phone) {
+		> * {
+			width: 100% !important;
+		}
+	}
+}

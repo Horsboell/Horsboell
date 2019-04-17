@@ -1,0 +1,28 @@
+html, body {
+	height: 100%;
+}
+
+html {
+	-webkit-text-size-adjust: 100%;
+}
+
+a {
+	cursor: pointer;
+	color: $theme1;
+}
+
+img {
+	max-width: 100%;
+}
+
+hr {
+	margin: $pd-def*2 $wv1 0;
+	border: 0;
+	border-top: 1px solid $theme4;
+
+	@include mq-from($tablet-l) {
+		margin-top: $pd-def*5;
+		margin-left: 0;
+		margin-right: $wv1;
+	}
+}

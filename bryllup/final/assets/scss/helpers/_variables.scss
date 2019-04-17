@@ -1,0 +1,58 @@
+// Basics
+$pd-content: 2em;
+$pd-def: 25px;
+
+// Media Query sizes
+$phone: 480px;
+$tablet: 768px;
+$tablet-l: 1024px;
+$desktop: 1100px;
+$xlarge: 1400px;
+
+// Timing
+$speed-def: .25s;
+$speed-slow: $speed-def*2;
+$speed-slower: $speed-def*3;
+
+// Colours
+$theme1: #000;
+$theme2: #caab83;
+$theme3: #1b363c;
+$theme4: #ccc;
+$theme-text: #666;
+
+// Widths viewport
+$wv1:  6.25vw;
+$wv2:  $wv1*2;
+$wv3:  $wv1*3;
+$wv4:  $wv1*4;
+$wv5:  $wv1*5;
+$wv6:  $wv1*6;
+$wv7:  $wv1*7;
+$wv8:  50vw;
+$wv9:  $wv1*9;
+$wv10: $wv1*10;
+$wv11: $wv1*11;
+$wv12: $wv1*12;
+$wv13: $wv1*13;
+$wv14: $wv1*14;
+$wv15: $wv1*15;
+$wv16: 100vw;
+
+// Widths %
+$wp1:  6.25%;
+$wp2:  $wp1*2;
+$wp3:  $wp1*3;
+$wp4:  $wp1*4;
+$wp5:  $wp1*5;
+$wp6:  $wp1*6;
+$wp7:  $wp1*7;
+$wp8:  50%;
+$wp9:  $wp1*9;
+$wp10: $wp1*10;
+$wp11: $wp1*11;
+$wp12: $wp1*12;
+$wp13: $wp1*13;
+$wp14: $wp1*14;
+$wp15: $wp1*15;
+$wp16: 100%;
