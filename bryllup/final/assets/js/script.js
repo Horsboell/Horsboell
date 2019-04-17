@@ -1,4 +1,5 @@
 //@prepros-prepend vendor/in-view.js
+//@prepros-prepend vendor/smoothscroll.js
 
 // Document ready
 $(function() {
@@ -13,8 +14,7 @@ $(function() {
 	.on("enter", function(el) {
 		$(el).addClass("in-view");
 	})
-	// .on('exit', el => {
-	// 	el.style.opacity = 0.5;
-	// });
-
+	.on('exit', el => {
+		$(el).removeClass("in-view");
+	});
 });

@@ -32,7 +32,7 @@
 		}
 
 		.time {
-			@extend .h1;
+			@extend .h1, .anim-reveal;
 			margin: 0 !important;
 		}
 

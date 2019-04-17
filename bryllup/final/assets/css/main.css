@@ -99,8 +99,8 @@ table {
     -webkit-transform: scale(1);
     transform: scale(1); }
   50% {
-    -webkit-transform: scale(1.15);
-    transform: scale(1.15); }
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); }
   100% {
     -webkit-transform: scale(1);
     transform: scale(1); } }
@@ -110,8 +110,8 @@ table {
     -webkit-transform: scale(1);
     transform: scale(1); }
   50% {
-    -webkit-transform: scale(1.15);
-    transform: scale(1.15); }
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); }
   100% {
     -webkit-transform: scale(1);
     transform: scale(1); } }
@@ -159,13 +159,13 @@ table {
   .js .anim-sizeUp.in-view, .js .timeline .event .icon svg.in-view, .timeline .event .icon .js svg.in-view {
     -webkit-animation-name: scaleUp;
     animation-name: scaleUp;
-    -webkit-animation-duration: 0.75s;
-    animation-duration: 0.75s; }
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s; }
 
-.js .anim-reveal, .js .cover-img {
+.js .anim-reveal, .js .cover-img, .js .timeline .event .time, .timeline .event .js .time {
   position: relative;
   overflow: hidden; }
-  .js .anim-reveal::after, .js .cover-img::after {
+  .js .anim-reveal::after, .js .cover-img::after, .js .timeline .event .time::after, .timeline .event .js .time::after {
     content: "";
     position: absolute;
     top: 0;
@@ -175,7 +175,7 @@ table {
     background-color: #fff;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards; }
-  .js .anim-reveal.in-view::after, .js .in-view.cover-img::after {
+  .js .anim-reveal.in-view::after, .js .in-view.cover-img::after, .js .timeline .event .in-view.time::after, .timeline .event .js .in-view.time::after {
     -webkit-animation-name: revealFromRight;
     animation-name: revealFromRight;
     -webkit-animation-duration: 0.75s;
@@ -765,3 +765,6 @@ dl {
             text-align: left; }
           .timeline .event:nth-child(even) .desc {
             text-align: right; } }
+
+#sec-welcome .article-img--wrapper .article--content {
+  background: transparent url("../img/blomst.jpg") no-repeat right bottom; }
