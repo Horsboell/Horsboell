@@ -1,0 +1,74 @@
+.timeline {
+	position: relative;
+	margin: $pd-def*2 0;
+	text-align: center;
+
+	&::before {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		content: "";
+		width: 1px;
+		background-color: $theme4;
+		height: 100%;
+		z-index: -1;
+	}
+
+	.event {
+		margin-bottom: 3rem;
+		padding: 1rem 0;
+		background-color: #fff;
+
+		p {
+			margin: 0;
+		}
+
+		.icon {
+			svg {
+				@extend .anim-sizeUp;
+				max-width: 50px;
+				max-height: 60px;
+			}
+		}
+
+		.time {
+			@extend .h1;
+			margin: 0 !important;
+		}
+
+		@include mq-from($tablet-l) {
+			display: flex;
+			align-items: center;
+			margin-bottom: 4rem;
+
+			.time {
+				width: 30%;
+			}
+
+			.icon {
+				width: 35%;
+				text-align: right;
+				svg {
+					max-width: 70px;
+					max-height: 80px;
+				}
+			}
+			.desc {
+				width: 35%;
+				text-align: left;
+			}
+
+			&:nth-child(even) {
+				flex-direction: row-reverse;
+				
+				.icon {
+					text-align: left;
+				}
+				.desc {
+					text-align: right;
+				}
+			}
+		}
+
+	}
+}

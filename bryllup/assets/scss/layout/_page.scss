@@ -1,0 +1,79 @@
+#page--content {
+	@include mq-from($tablet-l) {
+		padding-left: $wv2;
+	}
+}
+
+.fullpage {
+	min-height: 100vh;
+}
+
+.article--content {
+	@include mq-to($tablet-l) {
+		padding: $pd-def;
+		padding-top: $pd-def*2;
+
+		&.tac {
+			text-align: left;
+		}
+	}
+	@include mq-from($tablet-l) {
+		&:not(.clm-single) {
+			padding-right: $wv1;
+		}
+		padding-top: $pd-def*5;
+	}
+
+	// @for $i from 1 through 30 {
+	// 	> *:nth-child(#{$i}) {
+	// 		animation-delay: .07s*$i;
+	// 	}
+	// }
+}
+
+.article-img--wrapper {
+	@include mq-from($tablet-l) {
+		flex-direction: row-reverse;
+	}
+
+	.article-img {
+		min-height: 40vh;
+	}
+}
+
+.cover-img {
+	@extend .anim-fadeIn, .anim-reveal;
+
+	width: $wp16;
+	background-size: cover;
+	background-position: center;
+
+	img {
+		display: none;
+	}
+}
+
+.section-link {
+	margin-top: 6em;
+
+	&::before {
+		display: inline-block;
+		width: 100px;
+		content: url("data:image/svg+xml;charset=UTF-8, <svg xmlns='http://www.w3.org/2000/svg' width='74' height='10'><path d='M0 5.5L72.6 5.5 68.1 10 69.4 10 74 5 69.4 0 68.1 0 72.6 4.5 0 4.5 0 5.5Z' fill='rgb(202, 171, 131)'/></svg>");
+	}
+
+	@extend .label-small;
+
+	a {
+		text-decoration: none;
+	}
+}
+
+.info {
+	padding: $pd-def;
+	background-color: #eee;
+
+	strong, b {
+		color: $theme1;
+	}
+}
