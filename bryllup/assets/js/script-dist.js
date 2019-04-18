@@ -47,9 +47,8 @@ $(function() {
 
 	inView("h1, h2, h3, p, .section-label, .timeline .time, .timeline .desc, .timeline .icon svg, .cover-img, .animate")
 	.on("enter", function(el) {
-		$(el).addClass("in-view")
-	})
-	.on('exit', el => {
+		$(el).addClass("in-view");
+	}).on("exit", function(el) {
 		$(el).removeClass("in-view");
 	});
 });

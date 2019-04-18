@@ -105,10 +105,10 @@
 		li:last-child {
 			margin-top: 3rem;
 
-			@include mq-to($tablet-l) {
-				position: absolute;
-				bottom: 30px;
-			}
+			// @include mq-to($tablet-l) {
+			// 	position: absolute;
+			// 	bottom: 30px;
+			// }
 		}
 	}
 
