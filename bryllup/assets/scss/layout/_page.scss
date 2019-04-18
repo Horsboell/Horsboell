@@ -9,6 +9,10 @@
 }
 
 .article--content {
+	> h1, > h2, > h3, > .h1, > .h2, > .h3, > p {
+		@extend .anim-fadeSlide;
+	}
+
 	@include mq-to($tablet-l) {
 		padding: $pd-def;
 		padding-top: $pd-def*2;

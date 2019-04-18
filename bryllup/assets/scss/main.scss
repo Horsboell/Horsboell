@@ -7,11 +7,18 @@
 
 @import 'layout/type';
 @import 'layout/base';
+@import 'layout/page';
 @import 'layout/header';
 @import 'layout/navigation';
 @import 'layout/grid';
+@import 'layout/dlist';
 @import 'layout/footer';
 
+@import 'vendor/hamburgers/hamburgers';
+
+// @import 'components/modal';
 @import 'components/buttons';
+@import 'components/imgslider';
+@import 'components/timeline';
 
 @import 'pages/frontpage';

@@ -30,20 +30,18 @@
 				max-height: 60px;
 			}
 		}
-
 		.time {
 			@extend .h1, .anim-reveal;
 			margin: 0 !important;
+		}
+		.desc {
+			@extend .anim-fadeIn;
 		}
 
 		@include mq-from($tablet-l) {
 			display: flex;
 			align-items: center;
 			margin-bottom: 4rem;
-
-			.time {
-				width: 30%;
-			}
 
 			.icon {
 				width: 35%;
@@ -52,6 +50,9 @@
 					max-width: 70px;
 					max-height: 80px;
 				}
+			}
+			.time {
+				width: 30%;
 			}
 			.desc {
 				width: 35%;

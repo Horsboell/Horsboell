@@ -45,10 +45,9 @@ $(function() {
 		$("#mainnav--wrapper, .hamburger").toggleClass("is-active");
 	});
 
-
-	inView("h1, h2, h3, p, .section-label, .time, .icon svg, .cover-img, .animate")
+	inView("h1, h2, h3, p, .section-label, .timeline .time, .timeline .desc, .timeline .icon svg, .cover-img, .animate")
 	.on("enter", function(el) {
-		$(el).addClass("in-view");
+		$(el).addClass("in-view")
 	})
 	.on('exit', el => {
 		$(el).removeClass("in-view");

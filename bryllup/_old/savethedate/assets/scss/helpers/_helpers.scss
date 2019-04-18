@@ -1,6 +1,6 @@
 // Media Query indicators 
 // Helpers for easy javascript MQ-targeting
-// NOTE: Overlaps occur
+// NOTE: Overlaps occur between
 
 .mq-indicator {
 	display: none;
@@ -14,30 +14,31 @@
 		}
 	}
 	#tablet-indicator {
-		@include mq-to-from($phone, $tablet) {
+		@include mq-to($tablet) {
 			display: block;
 		}
 	}
 	#tablet-l-indicator {
-		@include mq-from($tablet-l) {
+		@include mq-to($tablet-l) {
 			display: block;
 		}
 	}
 	#desktop-indicator {
-		@include mq-from($desktop) {
+		@include mq-from($tablet) {
 			display: block;
 		}
 	}
 }
 
+
 // Clearfix – usable with @extend
 %clearfix {
 	&:before,
 	&:after {
-		content: "";
-		display: table;
+	    content: "";
+	    display: table;
 	}
 	&:after {
-		clear: both;
+	    clear: both;
 	}
 }
