@@ -76,14 +76,13 @@
 		bottom: $pd-def;
 		width: $wp16;
 		transform: translateX(-$wp15);
-
+		
 		.is-active & {
 			transform: translateX(-$pd-def);
 		}
 	}
 
-
-	.mainnav-toggle {
+	.mainnav-toggle-text {
 		display: none;
 		cursor: pointer;
 		@extend .label-small;
@@ -91,11 +90,16 @@
 		@include mq-from($tablet-l) {
 			display: block;
 			position: absolute;
-			top: 50%;
-			right: $wv1/2;
+			width: $wv1;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			// top: 50%;
+			// right: $wv1/2;
 			writing-mode: vertical-rl;
 			text-orientation: upright;
-			transform: translate(50%, -50%);
+			line-height: $wv1;
+			// transform: translate(50%, -50%);
 		}
 	}
 	
